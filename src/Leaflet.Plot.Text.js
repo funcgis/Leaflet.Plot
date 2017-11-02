@@ -3,4 +3,6 @@
  * Part of Plot to draw text on map
  */
 
+Plot.Text = L.Class.extend({
 
+});
