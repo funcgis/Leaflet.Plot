@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Plot Text</title>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css" />
-    <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
-    <script src="../src/leaflet.textpath.js"></script>
+    <link rel="stylesheet" href="../libs/leaflet.css" />
+    <script src="../libs/leaflet-src.js"></script>
+    <script src="../src/leaflet.plot.js"></script>
+    <script src="../src/leaflet.plot.text.js"></script>
     <style>
         #map {
             position: absolute;
@@ -27,11 +28,12 @@
         });
 
         //init map
-        var map = L.map('map')
-            .setView([36.605, 105.08], 5)
-            .addLayer(osm);
+        var map = L.map('map',{
+            attributionControl:false
+        }).setView([23.117,113.28], 5).addLayer(osm);
 
         //plot text on map
+        var textlayer2 = L.Plot.text('123',[23.117,113.28],{}).addTo(map);
 
     </script>
 </body>
