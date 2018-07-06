@@ -2,7 +2,8 @@
  * @Author: funcgis 
  * @Date: 2018-07-04 09:40:09 
  * @Last Modified by: funcgis
- * @Last Modified time: 2018-07-04 14:52:19
+ * @Last Modified time: 2018-07-06 09:26:17
+ * Plot Any Text On Map
  */
 
 L.Plot.Text = L.CircleMarker.extend({
